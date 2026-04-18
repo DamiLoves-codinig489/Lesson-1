@@ -1,0 +1,23 @@
+*{
+    font-size: 30px;
+}
+
+h3{
+    color: rgb(0, 234, 255);
+}
+
+h4{
+    color: rgb(252, 0, 29);
+}
+
+.dami{
+    color:pink;
+}
+
+#damilola{
+    color:plum;
+}
+
+h5,p{
+    color: powderblue;
+}
