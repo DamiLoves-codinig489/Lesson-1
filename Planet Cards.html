@@ -81,22 +81,23 @@
  let p1 = new Planet("Earth", "The only planet wth life");
   let p2 = new Planet("Mars", "Known as the red Planet");
    let p3 = new Planet("Saturn", "Has rings made of ice");
-          }
+          
 
  document.getElementById("cards1").innerHTML =
-"<div class='card'><div class='planet-name>" + p1.name + "</div>"
-
+"<div class='card'><div class='planet-name'>" + p1.name + "</div>"
++
 "<div class='planet-fact'>" + p1.describe() + "</div></div>";
 
     document.getElementById("cards2").innerHTML =
-        "<div class='card'><div class='planet-name>" + p2.name + "</div>"
-
+        "<div class='card'><div class='planet-name'>" + p2.name + "</div>"
++
     "<div class='planet-fact'>" + p2.describe() + "</div></div>";
 
     document.getElementById("cards3").innerHTML =
-        "<div class='card'><div class='planet-name>" + p3.name + "</div>"
-
+        "<div class='card'><div class='planet-name'>" + p3.name + "</div>"
++
     "<div class='planet-fact'>" + p3.describe() + "</div></div>";
+          }
 
     </script>
 </body>
