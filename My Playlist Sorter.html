@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
- <title></title>My Playlist Sorter</title>
+ <title>My Playlist Sorter</title>
  
  <style>
     body { background: lavender; }
@@ -39,17 +39,17 @@
  <div class="card mb-4">
 <div class="card-body">
 <h3 class="card-title">Label Every Play Count</h3>
-<button class="btn btn-primary mr-2" onclick="addLabel()">Add Plays Label<button>
+<button class="btn btn-primary " onclick="addLabel()">Add Plays Label<button>
  <div id="labelResult" class="box p-3 mt-3 rounded"></div>
                 </div>
 
 </div>
 <script>
-  var songs =["Zoom," "Bounce", "Glow", "Rush", "Spark"];
+  var songs =["Zoom", "Bounce", "Glow", "Rush", "Spark"];
   var plays = [320, 85, 210, 50, 175];
 
   document.getElementById("nameResult").innerHTML = "Songs: " + songs;
-  document.getElementById("countResult").innerHTML = "Plays: " + playss;
+  document.getElementById("countResult").innerHTML = "Plays: " + plays;
   document.getElementById("labelResult").innerHTML = "Press the button above!";
 
   function sortAZ()  { songs.sort(); document.getElementById("nameResult").innerHTML = "A to Z: " + songs; }
@@ -62,7 +62,7 @@
    function sortMost()  {plays.sort(function(a,b) { return b - a; });
         document.getElementById("countResult").innerHTML = "Most played first: " + plays; }
 
-    function addLabel()  { var 1 = plays.map(function(c){ return c+" plays";});
+    function addLabel()  { var l = plays.map(function(c){ return c+" plays";});
 document.getElementById("labelResult").innerHTML = "Labelled: " + l; }
         </script>
     </body>
