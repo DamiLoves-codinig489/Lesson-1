@@ -52,7 +52,7 @@
 
         <button class="btn btn-warning" onclick="doReplace()">Swap It!</button>
 
-        <div id="srResult" class="box p-3 mt-3 rounded">Sentence: "The dragon flew over the big castle."</div>
+        <div id="strResult" class="box p-3 mt-3 rounded">Sentence: "The dragon flew over the big castle."</div>
 
     </div>
 </div>
@@ -84,13 +84,14 @@ document.getElementById("typeResult").innerText =
         var v = document.getElementById("numIn").value;
         document.getElementById("convResult").innerHTML = "Number(' " + v + "') = " + Number(v) + "-now it is a: " + typeof Number(v);
     }
-   function (toNum) {
-    var w = document.getElementById("numIn").value;
-    document.getElementById("convResult").innerHTML = "Nuber('" + v + "') = " + Number(v) + " -now it is a: " + typeof Number(v);
+   function toNum() {
+    var v = document.getElementById("numIn").value;
+    document.getElementById("convResult").innerHTML = "Number('" + v + "') = " + Number(v) + " -now it is a: " + typeof Number(v);
    }
    function doSearch() {
     var w = document.getElementById("findW").value;
-    document.getElementById("srResult").innerHTML = p === -1 ? "'" + w + "' is not in the sentence — try another word!" : "Found '" + w + "' hiding at position " + p + "!";
+    var p = sen.search(w);
+    document.getElementById("strResult").innerHTML = p === -1 ? "'" + w + "' is not in the sentence — try another word!" : "Found '" + w + "' hiding at position " + p + "!";
    }
    function doReplace() {
     var w = document.getElementById("findW").value;
